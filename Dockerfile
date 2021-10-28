@@ -1,12 +1,12 @@
-FROM solr:7
+FROM solr:8
 
 USER root
 # ENV STI_SCRIPTS_PATH=/usr/libexec/s2i
 
 LABEL io.k8s.description="Run SOLR search in OpenShift" \
-	io.k8s.display-name="SOLR 7" \
+	io.k8s.display-name="SOLR 8" \
 	io.openshift.expose-services="8983:http" \
-	io.openshift.tags="builder,solr,solr7"
+	io.openshift.tags="builder,solr,solr8"
 # io.openshift.s2i.scripts-url="image:///${STI_SCRIPTS_PATH}"
 
 # COPY ./s2i/bin/. ${STI_SCRIPTS_PATH}
