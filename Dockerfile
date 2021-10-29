@@ -1,4 +1,4 @@
-FROM solr:8.0
+FROM solr:6.6.2
 
 USER root
 # ENV STI_SCRIPTS_PATH=/usr/libexec/s2i
