@@ -24,3 +24,5 @@ RUN chgrp -R 0 /opt/docker-solr \
 	&& chmod -R g+rwX /opt/docker-solr
 
 USER 8983
+
+CMD [ "solr-precreate", "gettingstarted" ]
