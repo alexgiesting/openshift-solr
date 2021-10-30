@@ -25,4 +25,6 @@ RUN chgrp -R 0 /opt/docker-solr \
 
 USER 8983
 
+# our Openshift container has < 100Mi memory to spare for the JVM :(
+ENV SOLR_HEAP="64m"
 CMD [ "solr-precreate", "gettingstarted" ]
